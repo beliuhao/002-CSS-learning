@@ -1,0 +1,97 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+html {
+    height: 100%;   /* very important */
+    box-sizing: border-box; /* very important */
+}
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative; /* very important */    
+    margin: 0;
+    padding-bottom: 60px;
+    min-height: 100%;   /* very important */
+    font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+    color: #3a3a3a;
+}
+
+h1, ul{
+    margin: 0;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+a { 
+    color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+#header {
+    background: #3acec2;
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    top: 0;
+}
+
+#name a {
+    display: inline;
+}
+
+#content {
+    padding: 100px 50px;
+}
+
+#footer {
+    position: absolute; /* very important */
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    background-color: #efefef;
+    text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+/* ================================= 
+  Media Queries Styles
+==================================== */
+@media (min-width: 769px) {
+    #content {
+        width: 80%;
+        margin: 5px auto;
+    }
+    li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 60px;
+    }
+}
