@@ -1,1 +1,9 @@
 CSS learning notes
+
+CSS: Cascading style sheets
+
+HTML -> STRUCTURE, CONTENT
+
+CSS -> PRESENTATION, STYLE
+
+JAVASCRIPT -> BEHAVIOR, ACTION 
