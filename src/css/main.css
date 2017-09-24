@@ -19,7 +19,6 @@ li {
 }
 
 a { 
-	color: #fff;
 	text-decoration: none;
 }
 
@@ -29,9 +28,29 @@ a {
 
 /* ---- Navigation ---- */
 
-.name {
-	margin: 0;
+#name {
+    font-size: 150%;
 }
+
+#name,
+#nav li {
+    text-align: center;
+    background: white;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#name a,
+#nav a {
+    padding: 10px 15px;
+    display: block;
+    color: #2FD1D1;
+}
+
+#nav a:hover {
+    color: #093a58;
+}
+
 
 /* ---- Layout Containers ---- */
 
@@ -42,16 +61,17 @@ a {
 
 #header {
 	background: #3acec2;
-	padding: 1em 0;
+    padding: 1em 0;
+    text-align: center;
 }
 
 #wrap {
-    min-height: calc(100vh - 89px);  /* 100 percent view-port height */
+    min-height: calc(100vh - 57px);  /* 100 percent view-port height */
 }
 
 #footer {
 	text-align: center;
-	padding: 2em 0;
+	padding: 1em 0;
 	background: #d9e4ea;
 }
 
@@ -67,5 +87,15 @@ a {
         width: 70%;
         max-width: 1000px;
         margin: 0 auto;
+    }
+
+    #name,
+    /* #nav, */
+    #nav li{
+        display: inline-block;
+    }
+
+    #name {
+        width: 240px;
     }
 }
