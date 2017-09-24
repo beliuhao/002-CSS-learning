@@ -45,6 +45,10 @@ a {
 	padding: 1em 0;
 }
 
+#wrap {
+    min-height: calc(100vh - 89px);  /* 100 percent view-port height */
+}
+
 #footer {
 	text-align: center;
 	padding: 2em 0;
@@ -55,6 +59,9 @@ a {
   Media Query Styles
 ==================================== */
 
+/*  The following styles work
+    when the view-port width 
+    is larger than 769px    */
 @media (min-width: 769px) {
     .container {
         width: 70%;
