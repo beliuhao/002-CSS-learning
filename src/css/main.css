@@ -17,10 +17,20 @@ ul {
 
 li {
     list-style-type: none;
+    font-weight: bold;
 }
 
 a { 
 	text-decoration: none;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: #0B4E88;
 }
 
 /* ================================= 
@@ -30,7 +40,7 @@ a {
 /* ---- Navigation ---- */
 
 #name {
-    font-size: 150%;
+    font-size: 120%;
 }
 
 #name,
@@ -41,11 +51,18 @@ a {
     margin-bottom: 6px;
 }
 
+#name a {
+    color: #0B4E88;
+}
+
+#nav a {
+    color: #2FD1D1;
+}
+
 #name a,
 #nav a {
     padding: 10px 15px;
     display: block;
-    color: #2FD1D1;
 }
 
 #nav a:hover {
@@ -71,9 +88,15 @@ a {
 }
 
 #footer {
-	text-align: center;
+    text-align: center;
+    margin-top: 30px;
 	padding: 1em 0;
 	background: #d9e4ea;
+}
+
+#image1 {
+    width: 85%;
+    margin: 0 auto;
 }
 
 /* ================================= 
@@ -85,20 +108,36 @@ a {
     is larger than 769px    */
 @media (min-width: 769px) {
     .container {
-        width: 70%;
-        max-width: 1000px;
+        width: 85%;
+        max-width: 1150px;
         margin: 0 auto;
     }
 
-    #name,
+    /* #name,
     #nav,
     #nav li{
         display: inline-block;
-    }
+    } */
 
-    #name {
+    /* #name {
         width: 240px;
         margin-right: 50px;
+    } */
+    #name {
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #nav {    
+        float: right;
+        margin-right: 5px;
+    }
+
+    #nav li {
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     #nav li {
@@ -113,6 +152,22 @@ a {
         padding-left: 1em;
         padding-right: 1em;
         /* background-color: rgba(128, 128, 128, 0.25); */
+    }
+
+    #image1 {
+        width: 300px;
+        float: left;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid lightgray;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
     }
 
 }
