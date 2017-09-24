@@ -120,6 +120,7 @@ h2 {
     } */
     #name {
         float: left;
+        margin-left: 0;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -140,6 +141,10 @@ h2 {
     #name,
     #nav li {
         background: none;
+    }
+
+    #name a {
+        padding-left: 0;
     }
 
     /* .column {
