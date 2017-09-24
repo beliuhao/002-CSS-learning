@@ -46,6 +46,11 @@ img {
 
 /* ---- Navigation ---- */
 
+.name,
+.main-nav {
+	text-align: center;
+}
+
 .name {
 	font-size: 1.25em;
 }
@@ -57,6 +62,8 @@ img {
 .name a,
 .main-nav a {
 	text-align: center;
+	padding: 10px 15px;
+	display: block;
 }
 
 .main-nav a {
@@ -74,12 +81,21 @@ img {
 .banner {
 	color: #fff;
 	background: #3acec2;
+	padding: 50px 0;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.col {
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .main-footer {
 	background: #d9e4ea;
 	padding: 2em 0;
 	margin-top: 30px;
+	text-align: center;
 }
 
 /* ---- Page Elements ---- */
@@ -88,13 +104,51 @@ img {
 	width: 190px;
 }
 
+
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
 
+	body {
+		padding-top: 70px;
+	}
 
+	.main-header {
+		background: white;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		box-shadow: 0 1px 10px rgba(0, 0, 0, .4);
+	}
+
+	.name {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.col {
+		float: left;
+		/* padding-right: -5px; */
+	}
+
+	.primary,
+	.secondary {
+		width: 50%;
+	}
 
 	/* ---- Float clearfix ---- */
 
@@ -104,4 +158,17 @@ img {
 		clear: both;
 	}
 
+}
+
+@media (min-width: 1025px) {
+	.container {
+		width: 90%;
+		max-width: 1080px;
+		margin: 0 auto;
+	}
+	.primary,
+	.secondary,
+	.tertiary {
+		width: 33%;
+	}
 }
