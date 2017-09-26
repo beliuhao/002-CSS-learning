@@ -5,13 +5,13 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* default flex-direction is row */
 }
 
-.item-4 {
-    order: -1;
+.item {
+    flex-grow: 1;
 }
 
 .item-1 {
-    order: -2;
+    flex-grow: 4;
 }
