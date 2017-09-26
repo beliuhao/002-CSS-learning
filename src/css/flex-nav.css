@@ -20,6 +20,13 @@
         flex-direction: column;
     }
 
+    .button {
+        /* align the button to the bottom */
+        margin-top: auto;
+        /* align the button to the right */
+        align-self: flex-end;
+    }
+
     .row {
         flex-wrap: wrap;
     }
