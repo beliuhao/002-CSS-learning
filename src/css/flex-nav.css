@@ -13,6 +13,15 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .col {
+        flex: 1;
+    }
+
+    .primary {
+        flex-grow: 2;
+    }
+
 }
 
 @media (min-width: 1025px) {
