@@ -10,8 +10,9 @@
 
 .item {
     flex-grow: 1;
+    flex-basis: 200px;
 }
 
-.item-1 {
-    flex-grow: 4;
+.item-2 {
+    flex: 2 400px;
 }
