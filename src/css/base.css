@@ -10,7 +10,17 @@ body {
 	line-height: 1.6;
 	color: #3a3a3a;
 	margin: 0;
+	/*  styles for sticky footer */
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
+
+/*  styles for sticky footer */
+.row {
+	flex: 1;
+}
+
 ul {
   margin: 0;
   padding: 0;
