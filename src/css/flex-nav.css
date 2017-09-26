@@ -5,7 +5,8 @@
 @media (min-width: 769px) {
     .main-header,
     .main-nav,
-    .row {
+    .row,
+    .col {
         display: flex;
     }
 
@@ -16,6 +17,7 @@
 
     .col {
         flex: 1 50%;
+        /* flex-direction: column; */
     }
 
     .row {

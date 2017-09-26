@@ -81,8 +81,10 @@ img {
 	margin-bottom: 48px;
 }
 .col {
-	padding-right: 1em;
-	padding-left: 1em;
+	padding: 1em;
+	background: #edf4f7;
+	border-radius: .35em;
+	margin: 0 .5em .8em;
 }
 .main-footer {
 	background: #d9e4ea;
@@ -100,6 +102,14 @@ img {
 }
 .feat-img {
 	border-radius: 5px;
+}
+
+.button {
+	color: #fff;
+	text-align: center;
+	padding: .625em 1.25em;
+	background: #3acec2;
+	border-radius: .35em;
 }
 
 /* ================================= 
