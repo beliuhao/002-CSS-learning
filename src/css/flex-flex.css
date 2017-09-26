@@ -6,13 +6,21 @@
     display: flex;
     flex-wrap: wrap;
     /* default flex-direction is row */
+    height: 450px;
 }
 
 .item {
-    flex-grow: 1;
-    flex-basis: 200px;
+    flex: 1;
+}
+
+.item-1 {
+    align-self: flex-start;
 }
 
 .item-2 {
-    flex: 2 400px;
+    align-self: flex-end;
+}
+
+.item-3 {
+    align-self: center;
 }
