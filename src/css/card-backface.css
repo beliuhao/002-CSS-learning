@@ -1,0 +1,67 @@
+body
+{
+	font-family: sans-serif;
+	font-size: 200%;
+	margin: 20px;
+	color: #eee;
+	background-color: #444;
+}
+
+h1
+{
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0 0 0.5em 0;
+	text-shadow: 1px 1px 1px #fff, -1px -1px 1px #000;
+}
+
+div.card
+{
+	width: 176px;
+	height: 246px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+div.card div
+{
+	position: absolute;
+	width: 160px;
+	height: 230px;
+	font-size: 2em;
+	text-align: center;
+	line-height: 230px;
+	color: #c00;
+	background-color: #fff;
+	border: 8px solid #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+div.card div span
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 0.5em;
+	width: auto;
+	line-height: 1em;
+}
+
+div.card div span:last-child
+{
+	left: auto;
+	top: auto;
+	right: 0;
+	bottom: 0;
+	transform: rotate(180deg);
+}
+
+div.card div.back
+{
+	font-size: 0.8em;
+	color: #fff;
+	background-color: #36c;
+}
