@@ -6,7 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS3 3D Transformations</title>
     <link rel="stylesheet" href="./src/css/3d-style.css">
-
+    <style>
+        #stage
+        {
+            transform-style: preserve-3d;
+            transform: rotateX(-20deg) rotateY(-40deg);
+        }
+        
+        #mybox1
+        {
+            transform: translateZ(0px);
+        }
+        
+        #mybox2
+        {
+            transform: translateZ(-300px);
+        }
+        
+        #mybox3
+        {
+            transform: translateZ(-600px);
+        }
+    </style>
 </head>
 <body>
     <h1>CSS3 3D Transformations</h1>
