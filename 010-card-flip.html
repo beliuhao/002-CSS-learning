@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/card-flip.css">
+    <style>
+        div.card div
+        {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: all 1s ease-in-out 0.2s;
+            transition: all 1s ease-in-out 0.2s;
+        }
+        
+        div.card div.back
+        {
+            -webkit-transform: perspective(400px) rotateY(0deg);
+            transform: perspective(400px) rotateY(0deg);
+        }
+        
+        div.card div.front
+        {
+            -webkit-transform: perspective(400px) rotateY(-179.9deg);
+            transform: perspective(400px) rotateY(-179.9deg);
+        }
+        
+        div.card:hover div.back
+        {
+            -webkit-transform: perspective(400px) rotateY(179.9deg);
+            transform: perspective(400px) rotateY(179.9deg);
+        }
+        
+        div.card:hover div.front
+        {
+            -webkit-transform: perspective(400px) rotateY(0deg);
+            transform: perspective(400px) rotateY(0deg);
+        }
+        </style>
+</head>
+<body>
+
+<h1>Find the Ace</h1>
+
+<div class="card">
+	<div class="front"><span>7&#9824;</span> &#9824; <span>7&#9824;</span></div>
+	<div class="back"></div>
+</div>
+
+<div class="card">
+	<div class="front red"><span>A&#9829;</span> &#9829; <span>A&#9829;</span></div>
+	<div class="back"></div>
+</div>
+
+<div class="card">
+	<div class="front"><span>2&#9827;</span> &#9827; <span>2&#9827;</span></div>
+	<div class="back"></div>
+</div>
+
+</body>
+</html>
